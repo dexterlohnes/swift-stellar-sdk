@@ -1,0 +1,31 @@
+Pods/Target Support Files/Pods-StellarSDKTests/Pods-StellarSDKTests.release.xcconfig
+Pods/Target Support Files/Pods-StellarSDKTests/Pods-StellarSDKTests.modulemap
+Pods/Target Support Files/Pods-StellarSDKTests/Pods-StellarSDKTests.debug.xcconfig
+Pods/Target Support Files/Pods-StellarSDKTests/Pods-StellarSDKTests-umbrella.h
+Pods/Target Support Files/Pods-StellarSDKTests/Pods-StellarSDKTests-resources.sh
+Pods/Target Support Files/Pods-StellarSDKTests/Pods-StellarSDKTests-frameworks.sh
+Pods/Target Support Files/Pods-StellarSDKTests/Pods-StellarSDKTests-dummy.m
+Pods/Target Support Files/Pods-StellarSDKTests/Pods-StellarSDKTests-acknowledgements.plist
+Pods/Target Support Files/Pods-StellarSDKTests/Pods-StellarSDKTests-acknowledgements.markdown
+Pods/Target Support Files/Pods-StellarSDK/Pods-StellarSDK.release.xcconfig
+Pods/Target Support Files/Pods-StellarSDK/Pods-StellarSDK.modulemap
+Pods/Target Support Files/Pods-StellarSDK/Pods-StellarSDK.debug.xcconfig
+Pods/Target Support Files/Pods-StellarSDK/Pods-StellarSDK-umbrella.h
+Pods/Target Support Files/Pods-StellarSDK/Pods-StellarSDK-resources.sh
+Pods/Target Support Files/Pods-StellarSDK/Pods-StellarSDK-dummy.m
+Pods/Target Support Files/Pods-StellarSDK/Pods-StellarSDK-acknowledgements.plist
+Pods/Target Support Files/Pods-StellarSDK/Pods-StellarSDK-acknowledgements.markdown
+Pods/Target Support Files/Pods-StellarSDK/Info.plist
+Pods/Target Support Files/Cuckoo/Info.plist
+Pods/Target Support Files/Cuckoo/Cuckoo.xcconfig
+Pods/Target Support Files/Cuckoo/Cuckoo.modulemap
+Pods/Target Support Files/Cuckoo/Cuckoo-umbrella.h
+Pods/Target Support Files/Cuckoo/Cuckoo-prefix.pch
+Pods/Target Support Files/Cuckoo/Cuckoo-dummy.m
+Pods
+Podfile.lock
+StellarSDK.xcworkspace/xcuserdata
+StellarSDK.xcodeproj/project.xcworkspace/xcuserdata/dexterlohnes.xcuserdatad
+contents.xcworkspacedata
+xcschememanagement.plist
+GeneratedMocks.swift
