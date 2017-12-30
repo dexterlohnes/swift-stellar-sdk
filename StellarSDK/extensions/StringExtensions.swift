@@ -33,8 +33,11 @@ extension String {
     }
     
     
-    func toData() -> Data? {
-        return self.data(using: String.Encoding.ascii)
+    func toData() -> Data {
+        guard let theData = self.data(using: String.Encoding.ascii) else {
+            return Data()
+        }
+        return theData
     }
 }
 
