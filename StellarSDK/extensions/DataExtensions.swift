@@ -18,4 +18,12 @@ extension Data {
         return map { String(format: "%02x", $0) }
             .joined(separator: "")
     }
+    
+    func toString() -> String {
+        let str = String.init(data: self, encoding: String.Encoding.ascii)
+        guard let _ = str, str?.isEmpty == false else {
+            return ""
+        }
+        return str!
+    }
 }
