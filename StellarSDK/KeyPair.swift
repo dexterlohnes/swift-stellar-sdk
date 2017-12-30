@@ -18,11 +18,23 @@ class KeyPair {
     
     private var wrappedKey : Sign.KeyPair
     
+    public var publicKey: Sign.PublicKey {
+        get {
+            return wrappedKey.publicKey
+        }
+    }
+    
+    public var secretKey: Sign.SecretKey {
+        get {
+            return wrappedKey.secretKey
+        }
+    }
+    
     init() {
         wrappedKey = Sign.KeyPair()
     }
     
-    init(from secretSeed: Data?) {
+    init(fromSecretSeed secretSeed: Data?) {
         let newWrappedKey = Sodium().sign.keyPair(seed: secretSeed!.prefix(upTo: Sodium().sign.SeedBytes))
         guard let _ = secretSeed, newWrappedKey != nil else {
             wrappedKey = Sign.KeyPair()
