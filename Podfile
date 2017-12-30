@@ -2,10 +2,11 @@
 # platform :ios, '9.0'
 
 target 'StellarSDK' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for StellarSDK
+  inherit! :search_paths
+  pod "Sodium"
 
   target 'StellarSDKTests' do
     inherit! :search_paths
