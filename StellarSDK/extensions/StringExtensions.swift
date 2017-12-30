@@ -32,6 +32,9 @@ extension String {
         return data
     }
     
+    func toChars() -> [Character] {
+        return Array(self)
+    }
     
     func toData() -> Data {
         guard let theData = self.data(using: String.Encoding.ascii) else {
