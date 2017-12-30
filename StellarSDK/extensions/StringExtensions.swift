@@ -17,7 +17,7 @@ extension String {
     ///
     /// - returns: Data represented by this hexadecimal string.
     
-    func hexadecimal() -> Data? {
+    func toHexData() -> Data? {
         var data = Data(capacity: characters.count / 2)
         
         let regex = try! NSRegularExpression(pattern: "[0-9a-f]{1,2}", options: .caseInsensitive)
