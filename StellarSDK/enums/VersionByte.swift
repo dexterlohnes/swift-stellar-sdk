@@ -14,7 +14,7 @@ enum VersionByte : Character {
     case PRE_AUTH_TX    = "T"
     case SHA256_HASH    = "X"
     
-    func Base32() -> UInt8 {
+    func Base32() -> byte {
         switch self {
         case VersionByte.ACCOUNT_ID:
             return 6 << 3

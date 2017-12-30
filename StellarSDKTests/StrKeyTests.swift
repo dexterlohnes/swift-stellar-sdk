@@ -28,8 +28,8 @@ class StrKeyTests: XCTestCase {
     
     func test_AfterEncodingThenDecodingSeed_ResultIsIdenticalToOriginalInput() {
         let seed = "SDJHRQF4GCMIIKAAAQ6IHY42X73FQFLHUULAPSKKD4DFDM7UXWWCRHBE"
-        let secret: [byte] = StrKey.decodeCheck(versionByte: VersionByte.SEED, data: seed)
-        let encoded = StrKey.encodeCheck(versionByte: VersionByte.SEED, data: secret)
+        let secret: [byte] = StrKey.decode(versionByte: VersionByte.SEED, data: seed)
+        let encoded = StrKey.encode(versionByte: VersionByte.SEED, data: secret)
         XCTAssertEqual(seed, String(encoded))
     }
 }

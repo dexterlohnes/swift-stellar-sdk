@@ -7,6 +7,8 @@ target 'StellarSDK' do
   # Pods for StellarSDK
   inherit! :search_paths
   pod "Sodium"
+  pod "SwiftBase32"
+  pod "CryptoSwift"
 
   target 'StellarSDKTests' do
     inherit! :search_paths

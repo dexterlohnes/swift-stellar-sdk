@@ -14,7 +14,7 @@ extension Data {
     ///
     /// - returns: `String` representation of this `Data` object.
     
-    func toHexString() -> String {
+    func toHex() -> String {
         return map { String(format: "%02x", $0) }
             .joined(separator: "")
     }

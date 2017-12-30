@@ -19,6 +19,8 @@
 		39911B461FF5721A005B412D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39911B441FF5721A005B412D /* Account.swift */; };
 		39911B471FF5721B005B412D /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39911B451FF5721A005B412D /* KeyPair.swift */; };
 		39911B4D1FF575F6005B412D /* TransactionBuilderAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39911B4C1FF575F6005B412D /* TransactionBuilderAccount.swift */; };
+		39C24D8B1FF8202800B7CC40 /* UInt16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C24D8A1FF8202800B7CC40 /* UInt16.swift */; };
+		39C24D8D1FF8211C00B7CC40 /* UInt16ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C24D8C1FF8211C00B7CC40 /* UInt16ExtensionTests.swift */; };
 		39D497EB1FF7397800524456 /* Sign.KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D497EA1FF7397800524456 /* Sign.KeyPair.swift */; };
 		39EF391E1FF5701B00DF6261 /* StellarSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39EF39141FF5701B00DF6261 /* StellarSDK.framework */; };
 		39EF39231FF5701B00DF6261 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF39221FF5701B00DF6261 /* AccountTests.swift */; };
@@ -48,6 +50,8 @@
 		39911B451FF5721A005B412D /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
 		39911B481FF572F1005B412D /* GeneratedMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		39911B4C1FF575F6005B412D /* TransactionBuilderAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBuilderAccount.swift; sourceTree = "<group>"; };
+		39C24D8A1FF8202800B7CC40 /* UInt16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt16.swift; sourceTree = "<group>"; };
+		39C24D8C1FF8211C00B7CC40 /* UInt16ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt16ExtensionTests.swift; sourceTree = "<group>"; };
 		39D497EA1FF7397800524456 /* Sign.KeyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.KeyPair.swift; sourceTree = "<group>"; };
 		39EF39141FF5701B00DF6261 /* StellarSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StellarSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EF39171FF5701B00DF6261 /* StellarSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StellarSDK.h; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				393B3C021FF6FBFB007132D5 /* StringExtensions.swift */,
+				39C24D8A1FF8202800B7CC40 /* UInt16.swift */,
 				393B3C051FF730EF007132D5 /* DataExtensions.swift */,
 				39D497EA1FF7397800524456 /* Sign.KeyPair.swift */,
 			);
@@ -151,6 +156,7 @@
 			children = (
 				39911B481FF572F1005B412D /* GeneratedMocks.swift */,
 				39EF39221FF5701B00DF6261 /* AccountTests.swift */,
+				39C24D8C1FF8211C00B7CC40 /* UInt16ExtensionTests.swift */,
 				393B3C001FF6ECBE007132D5 /* KeyPairTests.swift */,
 				3965EEAA1FF7FB31001FBC1F /* StrKeyTests.swift */,
 				39EF39241FF5701B00DF6261 /* Info.plist */,
@@ -391,6 +397,7 @@
 				3965EEA91FF76542001FBC1F /* StrKey.swift in Sources */,
 				39D497EB1FF7397800524456 /* Sign.KeyPair.swift in Sources */,
 				393B3C031FF6FBFB007132D5 /* StringExtensions.swift in Sources */,
+				39C24D8B1FF8202800B7CC40 /* UInt16.swift in Sources */,
 				39911B461FF5721A005B412D /* Account.swift in Sources */,
 				39911B4D1FF575F6005B412D /* TransactionBuilderAccount.swift in Sources */,
 				393B3C061FF730EF007132D5 /* DataExtensions.swift in Sources */,
@@ -402,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39C24D8D1FF8211C00B7CC40 /* UInt16ExtensionTests.swift in Sources */,
 				39EF39231FF5701B00DF6261 /* AccountTests.swift in Sources */,
 				3965EEAB1FF7FB31001FBC1F /* StrKeyTests.swift in Sources */,
 				393B3C091FF7316D007132D5 /* GeneratedMocks.swift in Sources */,
