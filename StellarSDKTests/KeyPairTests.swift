@@ -34,12 +34,10 @@ class KeyPairTests: XCTestCase {
         XCTAssertEqual(signature.toHexString(), expectedSignature.toHexString())
     }
     
-//    Verify the provided data and signature match this keypair's public key.
     func test_VerificationOfSignatureIsTrue_WhenDerivedFromSeed() {
         let signature = "587d4b472eeef7d07aafcd0b049640b0bb3f39784118c2e2b73a04fa2f64c9c538b4b2d0f5335e968a480021fdc23e98c0ddf424cb15d8131df8cb6c4bb58309".toHexData()!
         let keypair = KeyPair(from: SEED.toHexData())
         let inputData = "hello world".toData()
         XCTAssertTrue(keypair.verify(data: inputData, signature: signature))
-        
     }
 }
