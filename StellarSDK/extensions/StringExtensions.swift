@@ -32,6 +32,10 @@ extension String {
         return data
     }
     
+    
+    func toData() -> Data? {
+        return self.data(using: String.Encoding.ascii)
+    }
 }
 
 
