@@ -8,6 +8,8 @@
 
 import XCTest
 import Cuckoo
+import Sodium
+
 @testable import StellarSDK
 
 class KeyPairTests: XCTestCase {
@@ -29,7 +31,7 @@ class KeyPairTests: XCTestCase {
         let keypair = KeyPair(from: SEED.toHexData())
         let inputData = "hello world".toData()!
         let signature = keypair.signature(message: inputData)!
-        XCTAssertEqual(signature.hexadecimal(), expectedSignature.hexadecimal())
+        XCTAssertEqual(signature.toHexString(), expectedSignature.toHexString())
     }
-    
+
 }
