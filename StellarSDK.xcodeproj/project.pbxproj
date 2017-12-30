@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1DA35F1BFC6F5B66CB632A2A /* Pods_StellarSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC5B2B665052E1EBFDD95B6 /* Pods_StellarSDK.framework */; };
+		393B3BDF1FF5E687007132D5 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393B3BE01FF5E687007132D5 /* Sodium.framework */; };
+		393B3C011FF6ECBE007132D5 /* KeyPairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B3C001FF6ECBE007132D5 /* KeyPairTests.swift */; };
+		393B3C031FF6FBFB007132D5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B3C021FF6FBFB007132D5 /* StringExtensions.swift */; };
+		393B3C061FF730EF007132D5 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B3C051FF730EF007132D5 /* DataExtensions.swift */; };
+		393B3C091FF7316D007132D5 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39911B481FF572F1005B412D /* GeneratedMocks.swift */; };
 		39911B461FF5721A005B412D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39911B441FF5721A005B412D /* Account.swift */; };
 		39911B471FF5721B005B412D /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39911B451FF5721A005B412D /* KeyPair.swift */; };
-		39911B491FF572F1005B412D /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39911B481FF572F1005B412D /* GeneratedMocks.swift */; };
 		39911B4D1FF575F6005B412D /* TransactionBuilderAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39911B4C1FF575F6005B412D /* TransactionBuilderAccount.swift */; };
 		39EF391E1FF5701B00DF6261 /* StellarSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39EF39141FF5701B00DF6261 /* StellarSDK.framework */; };
 		39EF39231FF5701B00DF6261 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF39221FF5701B00DF6261 /* AccountTests.swift */; };
@@ -29,9 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		393B3BE01FF5E687007132D5 /* Sodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		393B3C001FF6ECBE007132D5 /* KeyPairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPairTests.swift; sourceTree = "<group>"; };
+		393B3C021FF6FBFB007132D5 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		393B3C051FF730EF007132D5 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataExtensions.swift; path = StellarSDK/extensions/DataExtensions.swift; sourceTree = SOURCE_ROOT; };
 		39911B441FF5721A005B412D /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		39911B451FF5721A005B412D /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
-		39911B481FF572F1005B412D /* GeneratedMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeneratedMocks.swift; path = StellarSDKTests/generated/GeneratedMocks.swift; sourceTree = "<group>"; };
+		39911B481FF572F1005B412D /* GeneratedMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		39911B4C1FF575F6005B412D /* TransactionBuilderAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBuilderAccount.swift; sourceTree = "<group>"; };
 		39EF39141FF5701B00DF6261 /* StellarSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StellarSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EF39171FF5701B00DF6261 /* StellarSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StellarSDK.h; sourceTree = "<group>"; };
@@ -52,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				393B3BDF1FF5E687007132D5 /* Sodium.framework in Frameworks */,
 				1DA35F1BFC6F5B66CB632A2A /* Pods_StellarSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		393B3C071FF73104007132D5 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				393B3C021FF6FBFB007132D5 /* StringExtensions.swift */,
+				393B3C051FF730EF007132D5 /* DataExtensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		39911B4B1FF575E0005B412D /* protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +97,6 @@
 		39EF390A1FF5701B00DF6261 = {
 			isa = PBXGroup;
 			children = (
-				39911B481FF572F1005B412D /* GeneratedMocks.swift */,
 				39EF39161FF5701B00DF6261 /* StellarSDK */,
 				39EF39211FF5701B00DF6261 /* StellarSDKTests */,
 				39EF39151FF5701B00DF6261 /* Products */,
@@ -100,6 +117,7 @@
 		39EF39161FF5701B00DF6261 /* StellarSDK */ = {
 			isa = PBXGroup;
 			children = (
+				393B3C071FF73104007132D5 /* extensions */,
 				39911B4B1FF575E0005B412D /* protocols */,
 				39911B441FF5721A005B412D /* Account.swift */,
 				39911B451FF5721A005B412D /* KeyPair.swift */,
@@ -112,7 +130,9 @@
 		39EF39211FF5701B00DF6261 /* StellarSDKTests */ = {
 			isa = PBXGroup;
 			children = (
+				39911B481FF572F1005B412D /* GeneratedMocks.swift */,
 				39EF39221FF5701B00DF6261 /* AccountTests.swift */,
+				393B3C001FF6ECBE007132D5 /* KeyPairTests.swift */,
 				39EF39241FF5701B00DF6261 /* Info.plist */,
 			);
 			path = StellarSDKTests;
@@ -121,6 +141,7 @@
 		7730624A841F7199F1E6368D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				393B3BE01FF5E687007132D5 /* Sodium.framework */,
 				FFC5B2B665052E1EBFDD95B6 /* Pods_StellarSDK.framework */,
 				54CF08026A636249B9F04098 /* Pods_StellarSDKTests.framework */,
 			);
@@ -346,8 +367,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				393B3C031FF6FBFB007132D5 /* StringExtensions.swift in Sources */,
 				39911B461FF5721A005B412D /* Account.swift in Sources */,
 				39911B4D1FF575F6005B412D /* TransactionBuilderAccount.swift in Sources */,
+				393B3C061FF730EF007132D5 /* DataExtensions.swift in Sources */,
 				39911B471FF5721B005B412D /* KeyPair.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +380,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				39EF39231FF5701B00DF6261 /* AccountTests.swift in Sources */,
-				39911B491FF572F1005B412D /* GeneratedMocks.swift in Sources */,
+				393B3C091FF7316D007132D5 /* GeneratedMocks.swift in Sources */,
+				393B3C011FF6ECBE007132D5 /* KeyPairTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +450,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/BridgingHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -478,6 +503,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/BridgingHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -503,6 +529,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dexterlohnes.StellarSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,6 +555,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dexterlohnes.StellarSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -543,6 +572,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dexterlohnes.StellarSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -559,6 +589,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dexterlohnes.StellarSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Sodium
 
 class Account: TransactionBuilderAccount{
     
@@ -19,7 +20,7 @@ class Account: TransactionBuilderAccount{
     }
     
     func getKeypair() -> KeyPair {
-        return KeyPair()
+        return keypair
     }
     
     func getSequenceNumber() -> Int {
