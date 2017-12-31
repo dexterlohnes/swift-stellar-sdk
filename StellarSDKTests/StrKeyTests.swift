@@ -26,10 +26,11 @@ class StrKeyTests: XCTestCase {
         super.tearDown()
     }
     
-    func test_AfterEncodingThenDecodingSeed_ResultIsIdenticalToOriginalInput() {
+    func test_AfterEncodingThenDecodingSeed_ResultIsIdenticalToOriginalInput() throws {
         let seed = "SDJHRQF4GCMIIKAAAQ6IHY42X73FQFLHUULAPSKKD4DFDM7UXWWCRHBE"
-        let secret: [byte] = StrKey.decode(versionByte: VersionByte.SEED, data: seed)
+        let secret: [byte] = try StrKey.decode(versionByte: VersionByte.SEED, data: seed)
         let encoded = StrKey.encode(versionByte: VersionByte.SEED, data: secret)
-        XCTAssertEqual(seed, String(encoded))
+        let encodedString = String(encoded)
+        XCTAssertEqual(seed, encodedString)
     }
 }
