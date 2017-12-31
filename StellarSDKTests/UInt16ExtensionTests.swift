@@ -12,9 +12,11 @@ import Cuckoo
 
 class UInt16ExtensionTests: XCTestCase {
     
-    func test_ConversionReturnsExpectedOutput() {
+    /// Important to note that it is expected behavior that
+    /// righthand bits are interpreted first. See comments on UInt16::toBytes()
+    func test_ConversionReturnsOutputWithBitsInterpretedRightmostFirst() {
         let test: UInt16 = 0xAAFF
-        let expectedOutcome: [byte] = [0xAA, 0xFF]
+        let expectedOutcome: [byte] = [0xFF, 0xAA]
         XCTAssertEqual(test.toBytes(), expectedOutcome)
     }
     
