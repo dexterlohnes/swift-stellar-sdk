@@ -46,6 +46,18 @@ class StrKeyTests: XCTestCase {
         XCTAssertTrue(errorThrown)
     }
     
+    func test_DecodeThrowsBase32DecodeError_WhenSeedGivenIsInvalid() {
+        let invalidSeed = "SAA6NXOBOXP3RXGAXBW6PGFI5BPK4ODVAWITS4VDOMN5C2M4B66ZML"
+        var errorThrown = false
+        do {
+            let secret: [byte] = try StrKey.decode(versionByte: VersionByte.SEED, data: invalidSeed)
+        } catch let e as DecodeError {
+            errorThrown = true
+            XCTAssertEqual(e, DecodeError.Base32DecodeError)
+        } catch let _ {}
+        XCTAssertTrue(errorThrown)
+    }
+    
 //    @Test()
 //    public void testDecodeInvalidVersionByte() {
 //    String address = "GCZHXL5HXQX5ABDM26LHYRCQZ5OJFHLOPLZX47WEBP3V2PF5AVFK2A5D";

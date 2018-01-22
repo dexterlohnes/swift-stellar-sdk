@@ -21,7 +21,7 @@ extension DecodeError {
         case .LengthGreaterThan128:
             return "Length of the provided array was greater than 128"
         case .Base32DecodeError:
-            return "The base32Decode function from SwiftCrypto didn't work. Probably occured in StrKey::decode(...)"
+            return "The base32Decode function from SwiftCrypto didn't work. Probably occured in StrKey::decode(...). Could be trying to decode an invalid / poorly formatted encoded string."
         case .VersionByteInvalid:
             return "Expected a different version byte than what was decoded"
         case .ChecksumInvalid:
