@@ -27,6 +27,18 @@ extension DecodeError {
         case .ChecksumInvalid:
             return "Decoded checksum did not match checksum calculated from payload"
         }
-        
+    }
+    
+    public var errorType: DecodeError {
+        switch self {
+        case .LengthGreaterThan128:
+            return .LengthGreaterThan128
+        case .Base32DecodeError:
+            return .Base32DecodeError
+        case .VersionByteInvalid:
+            return .VersionByteInvalid
+        case .ChecksumInvalid:
+            return .ChecksumInvalid
+        }
     }
 }
